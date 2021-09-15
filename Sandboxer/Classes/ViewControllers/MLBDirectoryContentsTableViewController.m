@@ -370,16 +370,20 @@ NSInteger const kMLBDeleteSelectedAlertViewTag = 121; // Toolbar Delete
 
 - (void)deleteSelectedFiles {
     NSLog(@"mlb - %@, title = %@", NSStringFromSelector(_cmd), self.title);
-    NSMutableArray<MLBFileInfo *> *deletedFileInfos = [NSMutableArray arrayWithCapacity:self.tableView.indexPathsForSelectedRows.count];
-    for (NSIndexPath *indexPath in self.tableView.indexPathsForSelectedRows) {
+    NSMutableArray<NSIndexPath *> *indexPathsForSelectedRows = [self.tableView.indexPathsForSelectedRows mutableCopy];
+    NSMutableArray<MLBFileInfo *> *deletedFileInfos = [NSMutableArray arrayWithCapacity:indexPathsForSelectedRows.count];
+    for (NSIndexPath *indexPath in [indexPathsForSelectedRows copy]) {
         MLBFileInfo *fileInfo = self.dataSource[indexPath.row];
         if ([self deleteFile:fileInfo]) {
             [deletedFileInfos addObject:fileInfo];
         }
+        else {
+            [indexPathsForSelectedRows removeObject:indexPath];
+        }
     }
     
     [self.dataSource removeObjectsInArray:deletedFileInfos];
-    [self.tableView deleteRowsAtIndexPaths:self.tableView.indexPathsForSelectedRows withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView deleteRowsAtIndexPaths:indexPathsForSelectedRows withRowAnimation:UITableViewRowAnimationAutomatic];
     
     [self endEditing];
 }
