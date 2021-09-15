@@ -5,8 +5,8 @@
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/shebuka/Sandboxer-Objc/blob/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Sandboxer.svg)](https://github.com/shebuka/Sandboxer-Objc)
 [![Language](https://img.shields.io/badge/language-Objective--C-brightgreen.svg)](https://developer.apple.com/documentation/objectivec)
-[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://www.apple.com/nl/ios/)
-[![Support](https://img.shields.io/badge/support-iOS%207+%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
+[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://www.apple.com/ios/)
+[![Support](https://img.shields.io/badge/support-iOS%208+%20-blue.svg?style=flat)](https://www.apple.com/ios/)
 
 <p align="center"><img src="https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/sandboxer_demo.gif" width="232" height="424"/></p>
 
