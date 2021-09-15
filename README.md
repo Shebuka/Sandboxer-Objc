@@ -41,6 +41,7 @@ Sandboxer 是用来在 iOS 设备上查看沙盒目录内容的，支持 3D Touc
 - ``homeTitle``: 主目录标题，默认为 ``Home``
 - ``extensionHidden``: 是否隐藏文件后缀，默认不隐藏。隐藏的话，搜索是不会匹配文件后缀的
 - ``shareable``: 是否可以分享，用来做权限控制，默认可以分享
+- ``sortByDate``: If files must be sorted by date, default is NO
 - ``fileDeletable``: 是否可以删除文件，用来做权限控制，默认不可以删除
 - ``directoryDeletable``: 是否可以删除文件夹，用来做权限控制，默认不可以删除
 
@@ -92,6 +93,7 @@ Sandboxer is use for browse files, file previews and 3D Touch, also search and s
 - ``homeTitle``: Home directory view controller title, default is ``Home``
 - ``extensionHidden``: Hide file extension, default is NO. If YES, will not match the file extension when searching
 - ``shareable``: If can share file, use for permission control, default is YES
+- ``sortByDate``: If files must be sorted by date, default is NO
 - ``fileDeletable``: If can delete file, use for permission control, default is NO
 - ``directoryDeletable``: If can delete directory, use for permission control, default is NO
 

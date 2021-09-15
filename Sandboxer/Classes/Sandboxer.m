@@ -44,6 +44,7 @@
 - (void)_config {
     _systemFilesHidden = YES;
     _homeFileURL = [NSURL fileURLWithPath:NSHomeDirectory() isDirectory:YES];
+    _sortByDate = NO;
     _extensionHidden = NO;
     _shareable = YES;
 }

@@ -200,6 +200,23 @@
     if (isExists && isDir) {
         NSError *error;
         NSArray<NSString *> *contents = [NSFileManager.defaultManager contentsOfDirectoryAtPath:URL.path error:&error];
+        
+        if (Sandboxer.shared.isSortByDate) {
+            contents = [contents sortedArrayUsingComparator: ^(NSString *file1, NSString *file2) {
+                // compare
+                NSDate *file1Date;
+                [[NSURL fileURLWithPath:file1 relativeToURL:URL] getResourceValue:&file1Date forKey:NSURLContentModificationDateKey error:nil];
+                
+                NSDate *file2Date;
+                [[NSURL fileURLWithPath:file2 relativeToURL:URL] getResourceValue:&file2Date forKey:NSURLContentModificationDateKey error:nil];
+                
+                // Ascending:
+                return [file1Date compare: file2Date];
+                // Descending:
+                //return [file2Date compare: file1Date];
+            }];
+        }
+        
         if (!error) {
             for (NSString *name in contents) {
                 if (Sandboxer.shared.isSystemFilesHidden && [name hasPrefix:@"."]) { continue; }
