@@ -1,20 +1,20 @@
-![Sandboxer](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Sandboxer_cover.jpg)
+![Sandboxer](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Sandboxer_cover.jpg)
 
 # Sandboxer
 
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/meilbn/Sandboxer-Objc/blob/master/LICENSE)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Sandboxer.svg)](https://github.com/meilbn/Sandboxer-Objc)
+[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/shebuka/Sandboxer-Objc/blob/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Sandboxer.svg)](https://github.com/shebuka/Sandboxer-Objc)
 [![Language](https://img.shields.io/badge/language-Objective--C-brightgreen.svg)](https://developer.apple.com/documentation/objectivec)
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://www.apple.com/nl/ios/)
 [![Support](https://img.shields.io/badge/support-iOS%207+%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
-<p align="center"><img src="https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/sandboxer_demo.gif" width="232" height="424"/></p>
+<p align="center"><img src="https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/sandboxer_demo.gif" width="232" height="424"/></p>
 
-# **[English](https://github.com/meilbn/Sandboxer-Objc#english)**
+# **[English](https://github.com/Shebuka/Sandboxer-Objc#english-1)**
 
 # 中文介绍
 
-![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_0.jpg)|![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_1.jpg)|![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_2.jpg)
+![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_0.jpg)|![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_1.jpg)|![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_CN_2.jpg)
 :------:|:------:|:------:
 
 Sandboxer 是用来在 iOS 设备上查看沙盒目录内容的，支持 3D Touch 预览，文件搜索等，方便调试，可以查看一些文件内容，也可以分享出来，方便在电脑上查看。
@@ -66,20 +66,20 @@ Sandboxer 使用 MIT 许可证，详情见 LICENSE 文件。
 
 # English
 
-![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_0.jpg)|![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_1.jpg)|![](https://github.com/meilbn/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_2.jpg)
+![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_0.jpg)|![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_1.jpg)|![](https://github.com/shebuka/Sandboxer-Objc/blob/master/Screenshots/Screenshot_EN_2.jpg)
 :------:|:------:|:------:
 
 Sandboxer is use for browse files, file previews and 3D Touch, also search and share file.
 
 ## Installation
 
-### CocoaPods
+### CocoaPods (this will install original [meilbn](https://github.com/meilbn/Sandboxer-Objc) version)
 
 1. Add ``pod 'Sandboxer'`` to your Podfile.
 2. Run ``pod install`` or ``pod update``.
 3. Import \<Sandboxer/Sandboxer.h\>.
 
-### Manually
+### Manually (for this fork install)
 
 1. Download all the files in the ``Sandboxer`` subdirectory.
 2. Add the source files to your Xcode project.
@@ -99,7 +99,7 @@ Sandboxer is use for browse files, file previews and 3D Touch, also search and s
 
 ## Version
 
-- ``1.1.0``: Removed UIWebView，lowest support iOS version change to iOS 8+
+- ``1.1.0``: Removed UIWebView, lowest support iOS version change to iOS 8+
 - ``1.0.2``: Fixed close button in the home dosen't display when setting custom title
 - ``1.0.1``: Fixed couldn't find resources bundle issue when using CocoaPods to import library.
 - ``1.0.0``: First release.
